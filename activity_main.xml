@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="308dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="th@mail.com"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="308dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="52dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="123456"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emailText" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="162dp"
+        android:onClick="signIn"
+        android:text="Sign in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passwordText" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="162dp"
+        android:onClick="signUp"
+        android:text="Sign up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signInButton" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="162dp"
+        android:onClick="signOut"
+        android:text="Sign out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signUpButton" />
+
+    <Button
+        android:id="@+id/secretButton"
+        android:layout_width="214dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="99dp"
+        android:gravity="start|top"
+        android:onClick="goToSecondPage"
+        android:text="Go on"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signOutButton"
+        app:layout_constraintVertical_bias="0.194" />
+</androidx.constraintlayout.widget.ConstraintLayout>
